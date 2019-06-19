@@ -914,6 +914,7 @@
 				border-radius: 100%;
 				box-shadow: 0 0 0 1.5em #ffffff;
 				width: 122px;
+				height: 122px;
 			}
 
 			#main .avatar:before {
@@ -1049,16 +1050,16 @@
   /* position: fixed; */
   background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
   background-size: 1800% 1800%;
-  -webkit-animation: rainbow 10s ease infinite;
-  -z-animation: rainbow 80s ease infinite;
-  -o-animation: rainbow 80s ease infinite;
+  -webkit-animation: rainbow 15s ease infinite;
+  -z-animation: rainbow 15s ease infinite;
+  -o-animation: rainbow 15s ease infinite;
   animation: rainbow 15s ease infinite;
   }
 
 @-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
 }
 @-moz-keyframes rainbow {
     0%{background-position:0% 82%}
@@ -1091,4 +1092,38 @@
     0%{clip-path: circle(0% at center);}
     50%{clip-path: circle(0% at center);}
     100%{clip-path: circle(100% at center)}
+}
+
+/*edits*/
+p.info {
+	margin-bottom: 4%;
+	display: inline-block;
+	/*margin-left: 5%;*/
+	font-size: 15px;
+}
+
+section#main {
+	/*width:50%;*/
+	width: 900px;
+	padding-bottom: 0px;
+}
+
+div.projects {
+	text-align: left;
+}
+
+p.line {
+	margin: 0;
+	display: inline-block;
+	margin-left: 3%;
+	font-size: 15px;
+}
+
+
+footer#footer {
+	padding-top: 10px;
+}
+
+body {
+	overflow-y: hidden;
 }
