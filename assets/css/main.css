@@ -1096,7 +1096,7 @@
 
 /*edits*/
 p.info {
-	margin-bottom: 4%;
+	margin-bottom: 4px;
 	display: inline-block;
 	/*margin-left: 5%;*/
 	font-size: 15px;
@@ -1106,6 +1106,7 @@ section#main {
 	/*width:50%;*/
 	width: 900px;
 	padding-bottom: 0px;
+	padding-top: 30px;
 }
 
 div.projects {
@@ -1126,4 +1127,30 @@ footer#footer {
 
 body {
 	overflow-y: hidden;
+}
+
+@keyframes breathing {
+  0% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  25% {
+    transform: scale(0.9) rotate(-5deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  75% {
+    transform: scale(0.9) rotate(5deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(0deg);
+  }
+}
+
+
+p.emoji {
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-right: 7px;
+	animation: breathing 5s infinite ease-in-out;
 }
